@@ -1,0 +1,326 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+CHIP  "pocessor_arm"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+DM_addr[8]                   : A2        : output : 2.5 V             :         : 8         : N              
+DM_writeData[0]              : A3        : output : 2.5 V             :         : 8         : N              
+DM_addr[14]                  : A4        : output : 2.5 V             :         : 8         : N              
+DM_addr[13]                  : A5        : output : 2.5 V             :         : 8         : N              
+DM_writeData[4]              : A6        : output : 2.5 V             :         : 8         : N              
+DM_writeData[6]              : A7        : output : 2.5 V             :         : 8         : N              
+GND+                         : A8        :        :                   :         : 8         :                
+GND+                         : A9        :        :                   :         : 7         :                
+DM_writeData[33]             : A10       : output : 2.5 V             :         : 7         : N              
+DM_addr[35]                  : A11       : output : 2.5 V             :         : 7         : N              
+DM_writeData[12]             : A12       : output : 2.5 V             :         : 7         : N              
+DM_writeData[40]             : A13       : output : 2.5 V             :         : 7         : N              
+DM_writeData[59]             : A14       : output : 2.5 V             :         : 7         : N              
+DM_addr[38]                  : A15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+DM_writeData[11]             : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+DM_addr[19]                  : B3        : output : 2.5 V             :         : 8         : N              
+DM_addr[5]                   : B4        : output : 2.5 V             :         : 8         : N              
+DM_writeData[9]              : B5        : output : 2.5 V             :         : 8         : N              
+DM_addr[33]                  : B6        : output : 2.5 V             :         : 8         : N              
+DM_writeData[19]             : B7        : output : 2.5 V             :         : 8         : N              
+GND+                         : B8        :        :                   :         : 8         :                
+GND+                         : B9        :        :                   :         : 7         :                
+DM_addr[7]                   : B10       : output : 2.5 V             :         : 7         : N              
+DM_writeData[24]             : B11       : output : 2.5 V             :         : 7         : N              
+DM_writeData[31]             : B12       : output : 2.5 V             :         : 7         : N              
+DM_writeData[36]             : B13       : output : 2.5 V             :         : 7         : N              
+DM_writeData[10]             : B14       : output : 2.5 V             :         : 7         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+DM_writeData[14]             : B16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+DM_writeData[3]              : C2        : output : 2.5 V             :         : 1         : N              
+DM_writeEnable               : C3        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+DM_addr[32]                  : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+DM_writeData[2]              : C8        : output : 2.5 V             :         : 8         : N              
+DM_writeData[34]             : C9        : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+DM_addr[3]                   : C11       : output : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+DM_writeData[39]             : C14       : output : 2.5 V             :         : 7         : N              
+DM_addr[23]                  : C15       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 6         :                
+DM_writeData[25]             : D1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+DM_addr[31]                  : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+DM_writeData[35]             : D5        : output : 2.5 V             :         : 8         : N              
+DM_addr[21]                  : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+DM_writeData[7]              : D8        : output : 2.5 V             :         : 8         : N              
+DM_addr[10]                  : D9        : output : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+DM_writeData[18]             : D11       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7         :                
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
+DM_writeData[13]             : D15       : output : 2.5 V             :         : 6         : N              
+DM_writeData[16]             : D16       : output : 2.5 V             :         : 6         : N              
+CLOCK_50                     : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+DM_addr[41]                  : E6        : output : 2.5 V             :         : 8         : N              
+DM_writeData[1]              : E7        : output : 2.5 V             :         : 8         : N              
+DM_writeData[5]              : E8        : output : 2.5 V             :         : 8         : N              
+DM_writeData[21]             : E9        : output : 2.5 V             :         : 7         : N              
+DM_writeData[22]             : E10       : output : 2.5 V             :         : 7         : N              
+DM_addr[28]                  : E11       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+DM_addr[4]                   : F1        : output : 2.5 V             :         : 1         : N              
+DM_writeData[30]             : F2        : output : 2.5 V             :         : 1         : N              
+DM_writeData[26]             : F3        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+DM_writeData[15]             : F8        : output : 2.5 V             :         : 8         : N              
+DM_writeData[32]             : F9        : output : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+DM_writeData[27]             : F13       : output : 2.5 V             :         : 6         : N              
+DM_writeData[28]             : F14       : output : 2.5 V             :         : 6         : N              
+DM_writeData[44]             : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+DM_writeData[8]              : G1        : output : 2.5 V             :         : 1         : N              
+DM_writeData[20]             : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+DM_addr[1]                   : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+DM_writeData[17]             : G15       : output : 2.5 V             :         : 6         : N              
+DM_writeData[29]             : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+DM_addr[34]                  : J1        : output : 2.5 V             :         : 2         : N              
+DM_addr[6]                   : J2        : output : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+DM_addr[0]                   : J13       : output : 2.5 V             :         : 5         : N              
+DM_writeData[51]             : J14       : output : 2.5 V             :         : 5         : N              
+DM_writeData[38]             : J15       : output : 2.5 V             :         : 5         : N              
+DM_writeData[52]             : J16       : output : 2.5 V             :         : 5         : N              
+DM_addr[57]                  : K1        : output : 2.5 V             :         : 2         : N              
+DM_addr[15]                  : K2        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+DM_addr[49]                  : K5        : output : 2.5 V             :         : 2         : N              
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+DM_writeData[56]             : K15       : output : 2.5 V             :         : 5         : N              
+DM_addr[56]                  : K16       : output : 2.5 V             :         : 5         : N              
+DM_writeData[50]             : L1        : output : 2.5 V             :         : 2         : N              
+DM_writeData[41]             : L2        : output : 2.5 V             :         : 2         : N              
+DM_writeData[62]             : L3        : output : 2.5 V             :         : 2         : N              
+DM_addr[52]                  : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+DM_addr[43]                  : L7        : output : 2.5 V             :         : 3         : N              
+DM_addr[44]                  : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+DM_writeData[37]             : L13       : output : 2.5 V             :         : 5         : N              
+DM_addr[25]                  : L14       : output : 2.5 V             :         : 5         : N              
+DM_writeData[48]             : L15       : output : 2.5 V             :         : 5         : N              
+DM_writeData[58]             : L16       : output : 2.5 V             :         : 5         : N              
+dump                         : M1        : input  : 2.5 V             :         : 2         : N              
+reset                        : M2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+DM_addr[9]                   : M6        : output : 2.5 V             :         : 3         : N              
+DM_addr[45]                  : M7        : output : 2.5 V             :         : 3         : N              
+DM_addr[55]                  : M8        : output : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+DM_writeData[47]             : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+DM_addr[12]                  : N1        : output : 2.5 V             :         : 2         : N              
+DM_addr[17]                  : N2        : output : 2.5 V             :         : 2         : N              
+DM_addr[40]                  : N3        : output : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+DM_addr[62]                  : N5        : output : 2.5 V             :         : 3         : N              
+DM_addr[2]                   : N6        : output : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+DM_writeData[57]             : N8        : output : 2.5 V             :         : 3         : N              
+DM_writeData[49]             : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+DM_writeData[60]             : N11       : output : 2.5 V             :         : 4         : N              
+DM_writeData[42]             : N12       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+DM_addr[59]                  : N14       : output : 2.5 V             :         : 5         : N              
+DM_addr[24]                  : N15       : output : 2.5 V             :         : 5         : N              
+DM_addr[47]                  : N16       : output : 2.5 V             :         : 5         : N              
+DM_addr[36]                  : P1        : output : 2.5 V             :         : 2         : N              
+DM_writeData[55]             : P2        : output : 2.5 V             :         : 2         : N              
+DM_addr[18]                  : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+DM_addr[48]                  : P6        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+DM_addr[42]                  : P8        : output : 2.5 V             :         : 3         : N              
+DM_writeData[23]             : P9        : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+DM_writeData[53]             : P11       : output : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+DM_addr[37]                  : P14       : output : 2.5 V             :         : 4         : N              
+DM_addr[61]                  : P15       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+GND                          : R2        : gnd    :                   :         :           :                
+DM_addr[29]                  : R3        : output : 2.5 V             :         : 3         : N              
+DM_writeData[63]             : R4        : output : 2.5 V             :         : 3         : N              
+DM_addr[58]                  : R5        : output : 2.5 V             :         : 3         : N              
+DM_addr[53]                  : R6        : output : 2.5 V             :         : 3         : N              
+DM_addr[63]                  : R7        : output : 2.5 V             :         : 3         : N              
+GND+                         : R8        :        :                   :         : 3         :                
+GND+                         : R9        :        :                   :         : 4         :                
+DM_writeData[45]             : R10       : output : 2.5 V             :         : 4         : N              
+DM_writeData[43]             : R11       : output : 2.5 V             :         : 4         : N              
+DM_addr[22]                  : R12       : output : 2.5 V             :         : 4         : N              
+DM_addr[30]                  : R13       : output : 2.5 V             :         : 4         : N              
+DM_addr[39]                  : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+DM_addr[60]                  : R16       : output : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+DM_writeData[46]             : T2        : output : 2.5 V             :         : 3         : N              
+DM_addr[11]                  : T3        : output : 2.5 V             :         : 3         : N              
+DM_addr[51]                  : T4        : output : 2.5 V             :         : 3         : N              
+DM_addr[46]                  : T5        : output : 2.5 V             :         : 3         : N              
+DM_addr[50]                  : T6        : output : 2.5 V             :         : 3         : N              
+DM_addr[54]                  : T7        : output : 2.5 V             :         : 3         : N              
+GND+                         : T8        :        :                   :         : 3         :                
+GND+                         : T9        :        :                   :         : 4         :                
+DM_writeData[61]             : T10       : output : 2.5 V             :         : 4         : N              
+DM_writeData[54]             : T11       : output : 2.5 V             :         : 4         : N              
+DM_addr[27]                  : T12       : output : 2.5 V             :         : 4         : N              
+DM_addr[26]                  : T13       : output : 2.5 V             :         : 4         : N              
+DM_addr[16]                  : T14       : output : 2.5 V             :         : 4         : N              
+DM_addr[20]                  : T15       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                
