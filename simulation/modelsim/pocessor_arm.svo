@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "11/06/2019 10:40:16"
+// DATE "11/06/2019 11:09:52"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -35,12 +35,12 @@ module processor_arm (
 	DM_addr,
 	DM_writeEnable,
 	dump);
-input 	logic CLOCK_50 ;
-input 	logic reset ;
-output 	logic [63:0] DM_writeData ;
-output 	logic [63:0] DM_addr ;
-output 	logic DM_writeEnable ;
-input 	logic dump ;
+input 	CLOCK_50;
+input 	reset;
+output 	[63:0] DM_writeData;
+output 	[63:0] DM_addr;
+output 	DM_writeEnable;
+input 	dump;
 
 // Design Ports Information
 // DM_writeData[0]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default

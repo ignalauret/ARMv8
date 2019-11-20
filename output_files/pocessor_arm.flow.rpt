@@ -1,5 +1,5 @@
 Flow report for pocessor_arm
-Wed Nov  6 10:40:16 2019
+Wed Nov 20 01:32:40 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov  6 10:40:16 2019       ;
+; Flow Status                        ; Flow Failed - Wed Nov 20 01:32:40 2019      ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pocessor_arm                                ;
 ; Top-level Entity Name              ; processor_arm                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 911 / 22,320 ( 4 % )                        ;
-;     Total combinational functions  ; 752 / 22,320 ( 3 % )                        ;
-;     Dedicated logic registers      ; 476 / 22,320 ( 2 % )                        ;
-; Total registers                    ; 476                                         ;
-; Total pins                         ; 132 / 154 ( 86 % )                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 6,144 / 608,256 ( 1 % )                     ;
-; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,69 +64,63 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2019 10:39:45 ;
+; Start date & time ; 11/20/2019 01:32:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pocessor_arm        ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                              ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 92668494367333.157304758503564         ; --            ; --            ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --            ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; processor_arm                          ; pocessor_arm  ; --            ; --             ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                               ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 158545682093115.157422435110541        ; --            ; --            ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; processor_arm  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; processor_arm                          ; --            ; --            ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --            ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; Modulos/processor_tb.sv                ; --            ; --            ; processor_arm  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; processor_arm                          ; --            ; --            ; processor_arm  ;
+; EDA_TEST_BENCH_NAME                  ; processor_arm                          ; --            ; --            ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --            ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; processor_arm ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --            ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --             ;
+; TOP_LEVEL_ENTITY                     ; processor_arm                          ; pocessor_arm  ; --            ; --             ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 1042 MB             ; 00:00:27                           ;
-; Fitter               ; 00:00:12     ; 1.1                     ; 1566 MB             ; 00:00:17                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 821 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 883 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1069 MB             ; 00:00:01                           ;
-; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:48                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 1274 MB             ; 00:00:25                           ;
+; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:25                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
-; Fitter               ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
-; Assembler            ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
-; Timing Analyzer      ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
-; EDA Netlist Writer   ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; ignalau          ; Linux Mint ; 19         ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off pocessor_arm -c pocessor_arm
-quartus_fit --read_settings_files=off --write_settings_files=off pocessor_arm -c pocessor_arm
-quartus_asm --read_settings_files=off --write_settings_files=off pocessor_arm -c pocessor_arm
-quartus_sta pocessor_arm -c pocessor_arm
-quartus_eda --read_settings_files=off --write_settings_files=off pocessor_arm -c pocessor_arm
+quartus_map --read_settings_files=on --write_settings_files=off pocessor_arm -c pocessor_arm --analysis_and_elaboration
 
 
 
